@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+
+    <title>Document</title>
+
+  </head>
+  <body class="h-screen flex flex-col justify-between">
+    <div class="flex flex-col font-sans h-full p-4 gap-6">
+        <div class="flex flex-col">
+          <div
+            class="top-bar flex flex-row justify-between p-1 font-medium text-xl border-b-2 items-center"
+          >
+            <span class="text-green-700">Annula</span>
+            <span class="font-semibold">Attivazione</span>
+            <span>
+              <span class="flex flex-col items-center">
+                <svg
+                  stroke="currentColor"
+                  fill="green"
+                  stroke-width="0"
+                  viewBox="0 0 1024 1024"
+                  height="1.3em"
+                  width="1.3em"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="text-green-600"
+                >
+                  <path
+                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                  ></path>
+                  <path
+                    d="M623.6 316.7C593.6 290.4 554 276 512 276s-81.6 14.5-111.6 40.7C369.2 344 352 380.7 352 420v7.6c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V420c0-44.1 43.1-80 96-80s96 35.9 96 80c0 31.1-22 59.6-56.1 72.7-21.2 8.1-39.2 22.3-52.1 40.9-13.1 19-19.9 41.8-19.9 64.9V620c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-22.7a48.3 48.3 0 0 1 30.9-44.8c59-22.7 97.1-74.7 97.1-132.5.1-39.3-17.1-76-48.3-103.3zM472 732a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-base text-green-700">Aiuto</span>
+            </span>
+          </div>
+          <div class="progress py-3">
+            <div class="bg-[#BEBEBE] rounded-full h-1.5 m-1.5">
+              <div
+                class="bg-green-700 h-1.5 rounded-full"
+                style="width: 25%"
+              ></div>
+            </div>
+          </div>
+        </div>
+          <div class="flex flex-col gap-10 px-8">
+            <div class="flex flex-col text-center gap-3">
+                <span class="text-2xl font-semibold">Inserisci i dati richiesti</span>
+                <span class="text-lg">Inserisci i dati richiesti per ricevere via SMS il
+                    Codice titolare.</span>
+            </div>
+            <div class="flex flex-col gap-10">
+                <input type="text" id="default-input" placeholder="Nome*" class="border border-gray-500 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                <input type="text" id="default-input" placeholder="Cognome*" class="border border-gray-500 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                       <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 20 20">
+                          <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                        </svg>
+                    </div>
+                    <input  datepicker datepicker-buttons datepicker-autoselect-today type="text" placeholder="data di nascita*" class="border border-gray-500 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 placeholder="Select date">
+                  </div>
+                <input type="text" id="default-input" placeholder="codice fiscale*" class="border border-gray-500 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto text-center mb-4">
+        <button
+          type="button"
+          class="text-white bg-[#258900] hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-lg px-16 py-2.5 text-center me-2 mb-2"
+        >
+          Continua
+        </button>
+      </div>
+  </body>
+</html>
